@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 mt-2">
+            <div class="form-group">
+              <label for="num">Отгадай Число</label>
+              <input type="text" name="num" id="num" class="form-control form-control-lg mt-2 mb-2">
+            </div>
+            <button type="button" class="btn btn-success btn-lg form-control" id="click">Ок</button>
+            <button class="btn btn-primary btn-lg form-control mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+              <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+            </svg></button>
+          </div>
+          <div class="col-md-6 col-sm-12 mt-2">
+            <div class="form-group">
+              <textarea style="resize: none; width: 100%;" name="result" class="form-input" id="result"  rows="20" readonly></textarea>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="./js/main-script.js"></script>
+  </body>
+</html>
