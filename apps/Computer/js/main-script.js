@@ -5,12 +5,17 @@ $(function () {
 });
 
 $("#click").click(function () {
+    if($("#num").val().length==4){
     var s = $("#result").val();
     s += `${$("#num").val()}\t${Give_Cow(SecretNum,$("#num").val())}:${Give_Bull(SecretNum,$("#num").val())}\n`;
     $("#result").val(s);
     if(Give_Cow(SecretNum,$("#num").val()) == 4 && Give_Bull(SecretNum,$("#num").val()) == 4){
         alert("Ты победил!!!");
         $("#click").prop('disabled', true);
+    }
+    }
+    else {
+        alert("Неправильное число");
     }
 });
 
