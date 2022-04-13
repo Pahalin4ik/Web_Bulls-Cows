@@ -8,7 +8,7 @@ $(function () {
 $("#click").click(function () {
     if ($("#num").val().length == 4) {
         var s = $("#result").val();
-        s += `${count}) https://github.com/Pahalin4ik/Web_Bulls-Cows.git${$("#num").val()}\t${Give_Cow(SecretNum, $("#num").val())}:${Give_Bull(SecretNum, $("#num").val())}\n`;
+        s += `${count}) ${$("#num").val()}\t${Give_Cow(SecretNum, $("#num").val())}:${Give_Bull(SecretNum, $("#num").val())}\n`;
         count++;
         $("#result").val(s);
         if (Give_Cow(SecretNum, $("#num").val()) == 4 && Give_Bull(SecretNum, $("#num").val()) == 4) {
